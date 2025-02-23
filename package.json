@@ -1,0 +1,25 @@
+{
+  "name": "mmd-to-minecraft-datapack",
+  "version": "1.0.0",
+  "description": "WebアプリでMMDモデルとモーションをMinecraftのデータパックに変換して再生するツール",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server",  // サーバーを立ち上げるコマンド（live-serverパッケージが必要）
+    "build": "webpack"       // ビルドコマンド（webpackを使ってアプリをビルド）
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "three": "^0.130.0",    // Three.js（MMDモデルを表示するために使う）
+    "live-server": "^1.2.1", // 開発サーバーを立ち上げる
+    "webpack": "^5.0.0",     // Webpack（モジュールバンドラー）
+    "webpack-cli": "^4.9.0", // WebpackのCLIツール
+    "file-saver": "^2.0.5",  // ファイルを保存するためのライブラリ（MMDモデルやモーションのアップロード機能用）
+    "dat.gui": "^0.7.7"      // GUIコントロールのライブラリ（UI操作のため）
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^4.10.0", // 開発用のWebサーバー
+    "babel-loader": "^8.2.2",         // BabelでのES6対応
+    "babel-preset-env": "^1.7.0"      // Babelプリセット
+  }
+}
